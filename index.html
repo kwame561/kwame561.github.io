@@ -8,7 +8,7 @@
     <meta name="description" content="Exploring the world of data analysis and the accompanying technologies">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="css/blog.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <title>Courtney's Blog, Home Page</title>
     <link rel="shortcut icon" href="image/enso.png" />
   </head>
@@ -64,9 +64,14 @@
                     <a class="text-dark" href="#spa">Stock Price Analytics</a>
                   </h3>
                   <div class="mb-1 text-muted">Jan 2019</div>
-                  <p class="card-text mb-auto">There are so many articles and blogs that speak to this, but I'd like to share how I used R to build my first stock analytics application...</p>
+                  <p class="card-text mb-auto clearfix">There are so many articles and blogs that speak to this, but I'd like to share how I used R to build my first stock analytics application...</p>
                   <a href="#spa">Continue reading</a>
                 </div>
+                <div class="card-img-right flex-auto d-none d-lg-block">
+                <a class="img-thumbnail">
+                  <img src="image/stock.jpeg" class="img-thumbnail">
+                </a>
+              </div>
               </div>
             </div>
             <div class="col-md-6">
@@ -74,12 +79,17 @@
                 <div class="card-body d-flex flex-column align-items-start">
                   <strong class="d-inline-block mb-2 text-success"><a name="python">Featured Python Topic</a></strong>
                   <h3 class="mb-0">
-                    <a class="text-dark" href="#">Build an Amortization Table</a>
+                    <a class="text-dark" href="#a-table">Build an Amortization Table</a>
                   </h3>
                   <div class="mb-1 text-muted">Jan 2019</div>
-                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text mb-auto">The aim of this endeavor was to understand the pandas dataframes, numpy arrays, and other python data structures...</p>
                   <a href="#">Continue reading</a>
                 </div>
+                <svg class="bd-placeholder-img card-img-right flex-auto d-none d-lg-block" width="200" height="250" xmlns="http:www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                <title>Placeholder</title>
+                <rect fill="#55595c" width="100%" height="100%"></rect>
+                <text fill="#eceeef" dy=".3em" x="50%" y="50%">Thumbnail</text>
+                </svg>
               </div>
             </div>
           </div>
@@ -113,12 +123,12 @@
               </div><!-- /.blog-post -->
         
               <div class="blog-post">
-                <h2 class="blog-post-title">Build an Amortization Table</h2>
+                <h2 class="blog-post-title"><a name="a-table">Build an Amortization Table</a></h2>
                 <p class="blog-post-meta">January, 2019 by <a href="#aboutme">Courtney Williams</a></p>
         
                 <p>This should outline my steps to create an amortization table using python.</p>
                 <br>
-                <p>The code can be found on my <a href="https://github.com/kwame561/Amortization-Table" target="_blank">GitHub</a> repository</p>
+                <p>View all the steps taken to build an amortization table in python in this <a href="https://nbviewer.jupyter.org/github/kwame561/Amortization-Table/blob/master/Loan%20Payment%20Analysis.ipynb" target="_blank">Jupyter Notebook</a>.</p>
               </div><!-- /.blog-post -->
               <!-- Uncomment when ready to use blog-pagination
               <nav class="blog-pagination">
@@ -156,7 +166,7 @@
         </main><!-- /.container -->
         
         <footer class="blog-footer">
-          <p>This blog/site was built using a <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> template made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.</p>
+          <p>This blog/site was built using an HTML template made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>, powered with <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.</p>
           <p>
             <a href="#">Back to top</a>
           </p>
