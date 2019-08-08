@@ -33,7 +33,7 @@
     "lint": "eslint .",
     "prepush": "npm run lint && npm run security-check",
     "security-check": "nsp check --output summary",
-    "start": "react-scripts start",
+    "start": "npm start",
     "build": "react-scripts build",
     "test": "npm run lint && npm run security-check && npm run bundle",
     "eject": "react-scripts eject"
