@@ -1,6 +1,6 @@
 {
   "name": "kwame561.github.io",
-  "private": true,
+  "private": false,
   "description": "Courtney Williams personal site",
   "version": "1.0.0",
   "homepage": "https://kwame561.github.io",
@@ -28,12 +28,12 @@
   },
   "scripts": {
     "bundle": "webpack -p --progress",
-    "predeploy": "npm run bundle",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "lint": "eslint .",
     "prepush": "npm run lint && npm run security-check",
     "security-check": "nsp check --output summary",
-    "start": "npm start",
+    "start": "webpack-dev-server --hot --inline",
     "build": "react-scripts build",
     "test": "npm run lint && npm run security-check && npm run bundle",
     "eject": "react-scripts eject"
