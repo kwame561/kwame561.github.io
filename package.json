@@ -1,12 +1,12 @@
 {
-  "name": "suddi.github.io",
+  "name": "kwame561.github.io",
   "private": true,
   "description": "Courtney Williams personal site",
   "version": "1.0.0",
   "homepage": "https://kwame561.github.io",
   "author": {
-    "name": "Sudharshan Ravindran",
-    "email": "suddi@mail.io",
+    "name": "Courtney Williams",
+    "email": "kwame561@mail.io",
     "url": "https://kwame561.github.io"
   },
   "repository": {
@@ -28,14 +28,19 @@
   },
   "scripts": {
     "bundle": "webpack -p --progress",
-    "deploy": "webpack -p --progress --config webpack.deploy.js",
+    "predeploy": "npm run bundle",
+    "deploy": "gh-pages -d build",
     "lint": "eslint .",
     "prepush": "npm run lint && npm run security-check",
     "security-check": "nsp check --output summary",
-    "start": "webpack-dev-server --hot --inline",
-    "test": "npm run lint && npm run security-check && npm run bundle"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "npm run lint && npm run security-check && npm run bundle",
+    "eject": "react-scripts eject"
   },
-  "dependencies": {},
+  "dependencies": {
+    "gh-pages": "^2.1.0"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
